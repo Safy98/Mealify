@@ -1,0 +1,89 @@
+:root:has(.mode input:checked) {
+
+    --color-default:#fff;
+    --primary-hue:35;
+    --primary-saturation:72%;
+    --primary-lightness:49%;
+    --color-primary: 
+    hsl(
+        var(--primary-hue), 
+        var(--primary-saturation),
+        var(--primary-lightness)
+        );
+
+
+ --color-secondary:#fff;
+ --color-tertiary:#9f9f9f; 
+
+    --secondary-hue:0;
+    --secondary-saturation:0%;
+    --secondary-lightness:9%;
+    --color-light: 
+    hsl(
+        var(--secondary-hue), 
+        var(--secondary-saturation),
+        var(--secondary-lightness)
+        );
+
+        --color-light-grey:#252525;
+
+
+        --light-hue:0;
+        --light-saturation:0% ;
+        --light-lightness:9%;
+}
+
+
+
+body:has(.mode input:checked) .card picture::before {
+    background-image: url(../imges/team-shape-dark.svg);
+}
+
+
+
+body:has(.mode input:checked)
+{
+    background-color: #202020;
+}
+:has(.mode input:checked)
+body:not(:has(:target)):has(.mode input:checked) .home-link,
+body:has(.home:target):has(.mode input:checked) .home-link ,
+body:has(.chefs:target):has(.mode input:checked) .chefs-link ,
+body:has(.gallery:target):has(.mode input:checked) .gallery-link ,
+body:has(.contact:target):has(.mode input:checked) .contact-link
+{
+    color: #000;
+}
+
+
+
+
+:has(.mode input:checked) nav   a:hover {
+
+    color: var(--color-default) ;    
+}
+
+:has(.mode input:checked)  .mode .light 
+{
+    display: block;
+}
+
+
+
+:has(.mode input:checked)  .mode .dark 
+{
+    display: none;
+}
+
+body:has(.mode input:checked):has(.nav-links:target) nav ul li a {
+
+    color: var(--color-default) ;
+}
+
+body:has(.mode input:checked):has(.nav-links:target) nav ul  {
+
+    background-color: var(--color-light-grey) ;
+}
+
+
+

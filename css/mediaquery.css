@@ -1,0 +1,363 @@
+/* ------------------ container ------------------- */
+
+@media screen and (min-width:1400px) {
+   
+    .container {
+        
+        max-width: 1320px;
+    }
+}
+
+
+@media screen and (max-width:1400px) {
+   
+    .container {
+        
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+   
+    .container {
+        
+        max-width: 960px;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav .container ul {
+        transform: translateX(100%);
+        position: absolute;
+        flex-direction: column;  
+        width: 350px; 
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        padding-inline: 20px;
+        gap: 0px;
+    }   
+
+    nav ul li {
+
+        padding-block: 25px;
+    }
+
+    nav ul li.close-icon {
+        display: block;
+        text-align: right;
+    }
+
+    nav .mode {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+}
+
+
+@media screen and (max-width:992px) {
+   
+    .container {
+        
+        max-width: 720px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+   
+    .container {
+        
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width:576px) {
+   
+    .container {
+    
+        padding-inline: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ Header ------------------- */
+
+@media screen and (min-width :1200px )
+{
+
+    header {
+        min-height: 100vh;
+
+
+    }
+}
+
+
+@media screen and (max-width :992px )
+{
+    header .container {
+
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+
+    header .container > * {
+
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    header .container .header-cap {
+
+        margin-top: 30px;
+    }
+
+    header .container .btn-main {
+
+        --border-radius: 100vh;
+    }
+
+}
+
+
+@media screen and (max-width: 400px)
+{
+    .buttons-group {
+
+        display: flex;
+       flex-direction: column;
+    }
+}
+
+
+/* ------------------ chefs ------------------- */
+
+@media screen and (max-width:992px) {
+    .chefs-card .card {
+        width:calc(calc(100% - var(--gap) ) / 2) ;
+
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .chefs-card .card {
+        width:100%;
+
+    }
+    
+}
+
+/* ------------------ gallery ------------------- */
+
+
+
+@media screen and (max-width : 1400px)
+{
+
+    .gallery .gallery-images {
+        
+        height: 1025px;
+        
+     }
+    
+    
+}
+
+
+@media screen and (max-width : 1200px)
+{
+
+    .gallery .gallery-images {
+      
+        height: 860px;
+        
+     }
+    
+    
+}
+@media screen and (max-width : 992px)
+{
+
+    .gallery .gallery-images {
+       
+        height: 1400px;
+        
+     }
+    
+     .gallery-images picture {
+        width: calc(calc(100% - var(--gap) ) / 2);
+        
+     }
+
+     .pizza {
+
+        order: 1;
+     }
+
+     .burger {
+
+        order: 2;
+     }
+
+     .Chicken {
+        order: 6;
+
+     }
+     .omelette {
+        order: 4;
+
+     }
+
+     .steak {
+
+        order: 5;
+     }
+
+     .pizza-slices {
+
+        order: 3;
+     }
+
+     .kebab {
+
+        order: 7;
+     }
+}
+
+@media screen and (max-width : 768px)
+{
+    .gallery .gallery-images {
+      
+        height: auto;
+        
+     }
+
+     .gallery-images picture {
+        width: 100%;
+        
+     }
+
+
+}
+
+
+
+/* ------------------ contact ------------------- */
+
+@media screen and ( max-width : 992px ) {
+    
+    .contact .input-group input {
+
+        width: 100%;
+    }
+    
+}
+
+@media screen and ( max-width : 768px ) {
+    
+    .contact .input-group input {
+
+        width: 100%;
+    }
+
+    .contact .contact-info > div {
+
+        width:100%;
+        
+         
+        
+    }
+    
+}
+
+/* ------------------ footer ------------------- */
+
+
+
+@media screen and ( max-width : 1200px ){
+    
+    footer :is(.contact-details , .about)
+    {
+        width: calc(calc(100% - var(--gap)  ) / 2 );
+        order: 1;
+        justify-content: space-between;
+    }
+
+    footer .subscription {
+
+        width: 100%;
+        order: 2;
+    }
+
+}
+
+
+@media screen and ( max-width : 768px ){
+    
+    footer :is(.contact-details , .about ,.subscription)
+    {
+        width: 100%;
+        order:0;
+    }
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
